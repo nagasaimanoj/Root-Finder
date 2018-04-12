@@ -1,4 +1,4 @@
-package com.example.nagasai.rootfinder;
+package blogspot.nagasaimanoj.in.android_rootfinder;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,28 +14,28 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText etNumber = (EditText) findViewById(R.id.etNumber);
-        EditText etRoot = (EditText) findViewById(R.id.etRoot);
-        TextView tvOutput = (TextView) findViewById(R.id.tvOutput);
-        TextView tvHint = (TextView) findViewById(R.id.tvHint);
+        final EditText etNumber = (EditText) findViewById(R.id.etNumber);
+        final EditText etRoot = (EditText) findViewById(R.id.etRoot);
+        final TextView tvOutput = (TextView) findViewById(R.id.tvOutput);
+        final TextView tvHint = (TextView) findViewById(R.id.tvHint);
         Button btnCalculate = (Button) findViewById(R.id.btnCalculate);
 
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (etNumber.getText().toString().equals("") && etRoot.getText().toString().equals("")) {
-                    tvOutput.setText(R.string.enter_numbers);
+                    tvOutput.setText("Enter Num & Root to continue");
                 } else if (etNumber.getText().toString().equals(0)) {
-                    tvOutput.setText(String.value(0));
+                    tvOutput.setText(String.valueOf(0));
                 } else if (etRoot.getText().toString().equals(0)) {
                     tvOutput.setText("Undefined");
                 } else {
                     double num = Double.parseDouble(etNumber.getText().toString());
                     double root = Double.parseDouble(etRoot.getText().toString());
                     double result = rootFinder(num, root);
-                    tvOutput.setText(String.valueOf(result);
+                    tvOutput.setText(String.valueOf(result));
                 }
-                tvHint.setText(R.string.clear_values);
+                tvHint.setText("press and hold calculate button to clear");
             }
         });
 
@@ -53,12 +53,12 @@ public class MainActivity extends Activity {
 
     double rootFinder(double number, double root) {
         double mid_val = 0, result = 0, start = 0, end = number;
-        while(mid_val != (start + end) / 2){
+        while (mid_val != (start + end) / 2) {
             mid_val = (start + end) / 2;
             result = Math.pow(mid_val, root);
-            if(result > number)
+            if (result > number)
                 end = mid_val;
-            else if(result < number)
+            else if (result < number)
                 start = mid_val;
             else
                 break;

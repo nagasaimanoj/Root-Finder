@@ -16,7 +16,7 @@
             android:layout_weight="2"
             android:background="@color/colorPrimary"
             android:gravity="center"
-            android:hint="@string/number"
+            android:hint="Enter Number"
             android:inputType="number" />
 
         <TextView
@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:background="@color/colorPrimary"
             android:gravity="center"
-            android:hint="@string/root"
+            android:hint="Enter Root"
             android:inputType="number" />
     </LinearLayout>
 
@@ -42,7 +42,7 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:hint="@string/app_by_gnsmk"
+        android:hint="app by GNSMK"
         android:textColor="@color/colorAccent"
         android:textIsSelectable="true"
         android:textSize="30sp" />
@@ -54,7 +54,7 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:hint="@string/to_find_nth_root_for_x_enter_x_in_1st_column_and_n_in_2nd_column"
+        android:hint="To find nth root for x enter x in 1st column and n in 2nd column"
         android:padding="10dp" />
 
     <Button
@@ -64,5 +64,5 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:background="@color/colorAccent"
-        android:text="@string/calculate" />
+        android:text="Calculate" />
 </LinearLayout>
