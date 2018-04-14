@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Android_RootFinder</name>
-	<comment>Project Android_RootFinder created by Buildship.</comment>
+	<name>RootFinder</name>
+	<comment>Project RootFinder created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
