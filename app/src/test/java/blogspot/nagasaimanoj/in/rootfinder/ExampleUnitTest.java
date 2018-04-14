@@ -1,4 +1,4 @@
-package blogspot.nagasaimanoj.in.android_rootfinder;
+package blogspot.nagasaimanoj.in.rootfinder;
 
 import org.junit.Test;
 
